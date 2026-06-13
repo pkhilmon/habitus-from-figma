@@ -11,7 +11,7 @@ export default function Navbar() {
       </div>
 
       {/* Nav links */}
-      <div className="hidden md:flex items-center gap-8">
+      <div className="hidden md:flex items-center gap-7">
         {["Home", "Features", "How it works", "Blog", "Resources", "About Us"].map((item) => (
           <a
             key={item}
