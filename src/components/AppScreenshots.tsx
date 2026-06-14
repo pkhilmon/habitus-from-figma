@@ -7,10 +7,10 @@ import SettingsImg from "@/app/assets/Settings.png";
 
 export default function AppScreenshots() {
   return (
-    <section className="w-[1440px] mx-auto px-4 overflow-hidden">
+    <section className="w-[1440px] mx-auto overflow-hidden">
       <div className="text-center">
-        <h2 className="text-6xl font-bold text-dark">Take a Look Inside</h2>
-        <p className="text-dark mt-5.75 text-[20px] tracking-[-0.0075em]">A simple, beautiful interface built for everyday use.</p>
+        <h2 className="text-6xl font-bold text-dark mb-5.75">Take a Look Inside</h2>
+        <p className="text-dark text-[20px] tracking-[-0.0075em]">A simple, beautiful interface built for everyday use.</p>
       </div>
 
       {/* Phones with blobs */}

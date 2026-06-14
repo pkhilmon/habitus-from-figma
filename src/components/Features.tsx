@@ -65,7 +65,7 @@ const logos = [
 
 export default function Features() {
   return (
-    <section className="px-25.25 py-[117px] w-[1440px] mx-auto">
+    <section className="px-25.25 py-29.25 w-[1440px] mx-auto">
       <div className="">
         {/* Section header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-14">
