@@ -66,7 +66,7 @@ const logos = [
 export default function Features() {
   return (
     <section className="px-25.25 py-[117px] w-[1440px] mx-auto">
-      <div className="max-w mx-auto">
+      <div className="">
         {/* Section header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-14">
           <h2 className="text-6xl font-bold text-dark">
@@ -93,7 +93,7 @@ export default function Features() {
 
         {/* Company callout */}
         <div className="flex flex-row gap-5.5 justify-between">
-          <div className="relative w-[50%] h-[560px] bg-light-blue rounded-[40px]">
+          <div className="relative w-[50%] h-[560px] bg-light-blue rounded-[40px] overflow-hidden">
             <Image className="absolute inset-x-0.5 bottom-0 mx-auto" src={HabitImg2} alt="" />
           </div>
 

@@ -1,0 +1,22 @@
+export default function ImageBg({ className, pathClassName, children }: { className?: string; pathClassName?: string, children: React.ReactNode }) {
+  return (
+    <div className="relative">
+      <svg
+        width="280"
+        height="486"
+        viewBox="0 0 280 486"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+      >
+        <path
+          d="M0 175.782C0 162.524 6.56925 150.128 17.5399 142.683L217.54 6.969C244.099 -11.0532 280 7.97159 280 40.0681V445.585C280 467.677 262.091 485.585 240 485.585H40C17.9086 485.585 0 467.677 0 445.585V175.782Z"
+          className={pathClassName}
+        />
+      </svg>
+      <div className="absolute inset-0 flex items-center justify-center">
+        {children}
+      </div>
+    </div>
+  );
+}
