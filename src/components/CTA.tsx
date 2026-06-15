@@ -3,8 +3,8 @@ import CTALogo from "@/app/assets/CTA-Logo.svg";
 
 export default function CTA() {
   return (
-    <section className="w-[1440px] mx-auto px-25 pt-30">
-      <div className="rounded-[40px] px-20 py-20 bg-light-blue">
+    <section className="w-[1440px] mx-auto px-25 pt-27.25">
+      <div className="rounded-[40px] px-20 pt-20 pb-19 bg-light-blue">
         <div className="flex flex-col items-stretch">
           {/* Logo mark */}
           <Image src={CTALogo} alt="" />

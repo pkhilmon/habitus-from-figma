@@ -55,7 +55,7 @@ export default function Testimonials() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-9.75">
           {testimonials.map((t) => (
-            <div key={t.name} className="bg-light-grey rounded-[40px] p-12.25">
+            <div key={t.name} className="bg-light-grey rounded-[40px] p-12.25 pb-15">
               <div className="flex items-center gap-4 mb-8">
                 {!t.avatarImg ? (
                 <div

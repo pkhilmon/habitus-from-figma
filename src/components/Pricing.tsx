@@ -21,7 +21,7 @@ const premiumFeatures = [
 
 export default function Pricing() {
   return (
-    <section className="w-[1440px] mx-auto px-25 pt-28.25">
+    <section className="w-[1440px] mx-auto px-25 pt-29.25">
       <div className="">
         <h2 className="text-6xl font-bold text-dark px-2.5 mb-5.75">
           Simple, transparent pricing
