@@ -1,4 +1,4 @@
-import ImageBg from "@/app/assets/ImageBg";
+import ImageBg from "@/components/ImageBg";
 import Image from "next/image";
 import HabitImg from "@/app/assets/Habit-tracker.png";
 import DashboardImg from "@/app/assets/Dashboard.png";
