@@ -25,7 +25,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="w-[1440px] mx-auto py-27.75 px-25">
+    <section className="w-[1440px] mx-auto pt-27.75 pb-19 px-25">
       <div className="">
         <div className="text-center mb-17">
           <h2 className="text-6xl font-bold text-dark leading-[1.2em]">
