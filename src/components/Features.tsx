@@ -102,8 +102,8 @@ export default function Features() {
             <h3 className="text-[36px] font-medium text-navy leading-[1.34em] py-6.25">
               Join thousands of users from top companies using Habitus to build better habits
             </h3>
-            <div className={cn("mt-auto flex bg-light-grey pl-14.5 py-11.25 items-center gap-10.75",
-              "rounded-l-[40px] mr-[-500px]"
+            <div className={cn("mt-auto flex bg-light-grey pl-14.5 py-11.25 items-center gap-10.75 overflow-hidden",
+              "rounded-l-[40px] mr-[-100vw]"
             )}>
               {logos.map((l) => (
                 <div key={l.name} className="h-[47px]">{l.svg}</div>
