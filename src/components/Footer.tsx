@@ -18,10 +18,10 @@ export default function Footer() {
               Track your daily routines, stay consistent, and turn goals into habits — all in one beautiful app.
             </p>
             <div className="flex gap-5 -ml-0.75">
-              <a href="#">
+              <a href="#" aria-label="Instagram">
                 <Image src={InstLogo} alt="" />
               </a>
-              <a href="#">
+              <a href="#" aria-label="LinkedIn">
                 <Image src={LinkedinLogo} alt="" />
               </a>
             </div>
