@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Habitus — Habit Tracker App Landing Page
+
+Pixel-perfect conversion of Figma designs to Next.js + Tailwind CSS — translating every spacing value, color token, and component structure from the design file into clean, maintainable React code. The result is a responsive, production-ready frontend that matches the original design at every breakpoint, without shortcuts or approximations.
+
+---
+
+## Cover Image
+
+<!-- Add cover image here -->
+![Habitus Cover](./Habitus-Cover.png)
+
+---
+
+## Design Attribution
+
+- **Design by:** Olga ([@olgaaverchenko](https://www.figma.com/@olgaaverchenko))
+- **Figma Community file:** [Habitus – Habit Tracker App Landing Page](https://www.figma.com/community/file/1507106587522840897/habitus-habit-tracker-app-landing-page)
+- **Code by:** [pkhilmon](https://pavlokhilmon.com)
+
+---
+
+## Features
+
+- **Hero section** — bold headline, CTA buttons, floating phone mockups, and decorative circles
+- **Feature cards** — Smart Reminders, Progress Analytics, and Streak Tracking
+- **Social proof** — company logo strip (Google, Spotify, Treehouse, Braze)
+- **App Screenshots** — full-screen app UI showcase
+- **Testimonials** — user reviews with avatars and star ratings
+- **Pricing** — Free vs. Premium two-column comparison ($0 / $4.99 per month)
+- **FAQ** — expandable frequently-asked-questions accordion
+- **CTA** — secondary conversion section with app-store call to action
+- **Footer** — links, social icons, and copyright
+- **Fully responsive** — mobile-first layout that adapts from 375 px to 1440 px
+- **Accessible markup** — semantic HTML, `alt` attributes on all images
+
+---
+
+## Performance
+
+<!-- Add Lighthouse screenshot here -->
+![Lighthouse Score](./Lighthouse%20Screenshot%202026-06-17.png)
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | [Next.js 16](https://nextjs.org) (App Router) |
+| UI Library | [React 19](https://react.dev) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com) |
+| Language | TypeScript 5 |
+| Utilities | `clsx`, `tailwind-merge` |
+| Linting | ESLint 9 + `eslint-config-next` |
+
+---
 
 ## Getting Started
 
-First, run the development server:
+**Prerequisites:** Node.js 18+
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build & Deploy
 
-## Learn More
+```bash
+# Production build
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# Preview the production build locally
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Deploy to Vercel** (recommended):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-## Deploy on Vercel
+Push to your GitHub repository and import it in the [Vercel dashboard](https://vercel.com/new). Zero configuration required — Next.js is auto-detected.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+```
+site/
+├── src/
+│   ├── app/
+│   │   ├── assets/          # SVG icons and PNG app screenshots
+│   │   ├── globals.css      # Global styles and Tailwind theme
+│   │   ├── layout.tsx       # Root layout (fonts, metadata)
+│   │   └── page.tsx         # Home page — composes all sections
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Features.tsx
+│   │   ├── AppScreenshots.tsx
+│   │   ├── Testimonials.tsx
+│   │   ├── CTA.tsx
+│   │   ├── Pricing.tsx
+│   │   ├── FAQ.tsx
+│   │   └── Footer.tsx
+│   └── lib/
+│       └── utils.ts         # cn() helper (clsx + tailwind-merge)
+├── public/                  # Static assets served at /
+├── next.config.ts
+├── postcss.config.mjs
+├── tailwind.config (inline in CSS)
+├── tsconfig.json
+└── package.json
+```
+
+---
+
+## License
+
+This project is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+
+You are free to share and adapt the material for any purpose, even commercially, as long as appropriate credit is given.
+
+See [LICENSE](./LICENSE) for full terms.
+
+---
+
+## Acknowledgements
+
+- [Olga (@olgaaverchenko)](https://www.figma.com/@olgaaverchenko) for the original Figma design
+- [Next.js](https://nextjs.org) and [Vercel](https://vercel.com) for the framework and hosting platform
+- [Tailwind CSS](https://tailwindcss.com) for the utility-first styling system
